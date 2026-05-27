@@ -6,17 +6,19 @@ let compChoice;
 let userScore=0;
 let compScore=0;
 
+let btn=document.getElementById('btn');
+let userscore=document.getElementById('userscore');
+let compscore=document.getElementById('compscore');
+
+
 function compChoicefunc(){
     let arr=["rock","paper","scissor"];
     let indexarr=Math.floor(Math.random()*3);
-    compChoice=arr[indexarr];
-    return compChoice;
+    return arr[indexarr];
 }
 function gameimplementation(uchoice){
     compChoice=compChoicefunc();
 
-
-    // alert(`User selected : ${uchoice} and Computer Selected ${compChoice}`)
     document.getElementById('displaypara').innerHTML=`User selected : ${uchoice} and Computer Selected ${compChoice}`;
 
 
@@ -68,7 +70,6 @@ function gameimplementation(uchoice){
 
     }
 }
-
 Allimg.forEach((i)=>{
     i.addEventListener('click',()=>{
         userChoice=i.id;
