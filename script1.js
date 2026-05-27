@@ -19,7 +19,8 @@ function compChoicefunc(){
 function gameimplementation(uchoice){
     compChoice=compChoicefunc();
 
-    document.getElementById('displaypara').innerHTML=`User selected : ${uchoice} and Computer Selected ${compChoice}`;
+    document.getElementById('displaypara').innerHTML=
+        `User selected : ${uchoice} and Computer Selected ${compChoice}`;
 
 
     if(compChoice===userChoice ){
